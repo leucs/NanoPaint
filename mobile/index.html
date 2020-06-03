@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>NanoPaint | TetraLoom</title>
+    <link rel="stylesheet" type="text/css" href="/tools/tools.css">
+    <link rel="stylesheet" type="text/css" href="/paint/mobile/paint.css">
+  </head>
+  
+  <body>
+    <div class="topnav">
+      <a href="/"       >Home</a>
+      <a href="/twitch/">Twitch</a>
+    </div> <br>
+    
+    <div class="center-area">
+      
+      <img src="/paint/paint-pic.png" style="max-width: 50%; height: auto;" alt="NanoPaint"></img>
+      
+      <div id="paint">
+        <canvas id="main-layer" width="1024" height="1024">Your browser is out of date.</canvas>
+        <canvas id="ui-layer"   width="1024" height="1024">Your browser is out of date.</canvas>
+        <div id="pick" style="display: none;"></div>
+      </div>
+      
+      <br>
+      
+      <p>Click a tile, choose a color, and scan the QR code.</p>
+      <p>Or, after choosing, click this <a id="natrium" href="nano:nano_3j3dtp68ubnibm78un7ge7jqn9hr9a8g4xf94tg1nosn9818pw44cee7noku?amount=100000000000000000000000000">Natrium link</a></p>
+      <p>Don't have any nano? Use my <a href="/nano/">faucet</a> :)</p>
+
+      <div id="pay">
+	<div id="box">
+          <div id="qrcode"></div>
+	</div>
+	<br>
+      </div>
+      
+      <audio loop="loop" preload="auto" id="jazz">
+	<source src="/audio/smooth-jazz.mp3" type="audio/mpeg">
+      </audio><br>
+    </div>
+    
+    <div class="bottom-nav">
+      <a href="/terms/">&copy; 2020 TetraLoom LLC</a>
+      <div class="nav-right">
+        <a href="/legal/">Legal</a>
+      </div>
+    </div>
+  </body>
+  
+  <script src="/paint/socket.io/socket.io.js"></script>
+  <script src="/libraries/qrcode.js"></script>
+  <script src="/libraries/picker.js"></script>
+  <script src="/paint/mobile/paint.js"></script>
+</html>

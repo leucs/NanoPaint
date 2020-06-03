@@ -1,0 +1,70 @@
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: top left;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+#main-layer {
+    z-index: 1;
+}
+#ui-layer {
+    z-index: 2;
+}
+#paint {
+    width: 95vw;
+    height: 92vw;
+    position: relative;
+    margin: 0 auto;
+    background: #202020;
+    overflow: scroll;
+}
+#paint::-webkit-scrollbar {
+    display: none;
+}
+#pay {
+    padding: 16px 0;
+    display: none;
+}
+#box {
+    position: relative;
+    border: 16px solid black;
+    outline: 16px solid black;
+    background: #fff;
+    width: 192px;
+    height: 192px;
+    margin: 0 auto;
+}
+#pick {
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+}
+#anchor {
+    margin: 0 auto;
+}
+a {
+    color: #17f350;
+    text-decoration: none;
+}
+.center-area {
+    width: 90vw;
+    margin: 0 auto;
+    word-wrap: break-word;
+    text-align: center;
+}
+h1 {
+    color: #fff;
+}
+p {
+    color: #fff;
+}
+.topnav     { background: #444; }
+.bottom-nav { background: #444; }
+body {
+    background-color: #222;
+}
